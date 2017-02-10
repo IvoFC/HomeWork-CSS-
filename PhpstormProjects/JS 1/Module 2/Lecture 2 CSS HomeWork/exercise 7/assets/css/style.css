@@ -1,0 +1,31 @@
+#wrapper {
+    align-items: center;
+    border: 2px solid black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+#top-nav {
+    display: inline-block;
+    background: #1F2324;
+}
+
+#top-nav h1 {
+    float: left;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0.2em 0 0.3em 2em;
+}
+
+#top-nav nav ul {
+    float: right;
+    width: 100%
+}
+
+#top-nav nav ul li {
+    float: right;
+    width: 25%;
+    text-align: center;
+}

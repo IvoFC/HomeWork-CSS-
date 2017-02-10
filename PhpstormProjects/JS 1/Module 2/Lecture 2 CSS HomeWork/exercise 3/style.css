@@ -1,0 +1,42 @@
+header {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0.5em;
+}
+
+#main {
+    display: block;
+    height: 400px;
+    margin-bottom: 0.5em;
+}
+
+#main article {
+    display: inline-block;
+    height: 100%;
+}
+
+#left {
+    background-color: purple;
+    width: 20%;
+    float: left;
+}
+
+#center {
+    background-color: green;
+    width: 58%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+#right {
+    background-color: red;
+    width: 20%;
+    float: right;
+}
+
+footer {
+    background-color: blue;
+    width: 100%;
+    height: 30px;
+}

@@ -1,0 +1,415 @@
+#container {
+    background-image: url("../images/parallax1.png");
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+    background-image: url("../images/parallax2.png");
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: #1F2324;
+}
+
+#top-nav {
+    display: inline-flex;
+}
+
+#top-nav h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0.2em 0 0.3em 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#top-nav ul {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-top: 0.8em;
+    padding-right: 1em;
+}
+
+#top-nav ul li a {
+    color: #848484;
+    padding: 1em 0.5em;
+    font-size: 0.9em;
+}
+
+#searchField {
+    border-radius: 5px;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+#top-nav ul li a:hover {
+    color: white;
+}
+
+#menu {
+    background: #F73B4C;
+    display: flex;
+    justify-content: center;
+}
+
+#menu nav ul li {
+    display: inline-flex;
+}
+
+#menu nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 2em;
+}
+
+#menu nav ul li a:hover {
+    background-color: #ba2c34;
+    opacity: 0.5;
+}
+
+/*CAROUSEL*/
+
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#carousel {
+    overflow: hidden;
+}
+
+#carousel #img1, #img2, #img3 {
+    overflow: hidden;
+    height: 150px;
+    transition: all .2s ease-in-out;
+}
+
+#carousel #img1:hover, #img2:hover, #img3:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#carouselImg {
+    width: 100%;
+    height: auto;
+}
+
+#carousel h1 {
+    padding-top: 2em;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#carousel p {;
+    color: white;
+    text-align: center;
+    padding: 4em 10em 5em 10em;
+}
+
+#carousel a {
+    text-align: center;
+}
+
+#carousel ul {
+    display: flex;
+    margin-top: -17em;
+    margin-bottom: 6em;
+    justify-content: center;
+}
+
+#carousel ul li a {
+    border: 1px solid whitesmoke;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-size: 1em;
+    padding: 2em 4em 2em 4em;
+    margin: 1em;
+    background-color: rgba(110, 113, 133, 0.47);
+
+}
+
+#carousel ul li a:hover {
+    background-color: rgba(133, 35, 49, 0.47);
+    border-color: rgba(133, 35, 49, 0.47);
+}
+
+/*CATEGORIES*/
+
+#categories {
+    display: flex;
+    /*background-image: url("../images/parallax2.png");*/
+
+    color: whitesmoke;
+    flex-direction: column;
+    box-shadow: inset 4px 6000px 21px 0px rgba(0, 0, 0, 0.8);
+}
+
+#categories h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+#categories p {
+    text-align: center;
+    padding: 0 5em 0 5em;
+}
+
+#categories .list {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list div ul {
+    padding: 1em 1em 0 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list div ul i {
+    padding: 0.4em;
+}
+
+#categories ul.button {
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 6em 0;
+}
+
+#categories ul li a {
+    border: 1px solid whitesmoke;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-size: 1em;
+    padding: 1.5em 4em 1.5em 4em;
+    background-color: rgba(110, 113, 133, 0.47);
+}
+
+#categories ul li a:hover {
+    background-color: rgba(133, 35, 49, 0.47);
+    border-color: rgba(133, 35, 49, 0.47);
+}
+
+.list div ul li:hover {
+    color: rgba(133, 35, 49, 0.47);
+    cursor: pointer;
+}
+
+/*MOVIE SECTION*/
+
+#more-movies {
+    background-color: #1F2324;
+    color: whitesmoke;
+}
+
+#more-movies h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.pictures {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pictures .movies-pic .img {
+    max-width: 230px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pictures .movies-pic .img img {
+    max-width: 230px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.pictures .movies-pic img:hover {
+    transform: scale(1.4, 1.4);
+}
+
+/*IMAGE DESCRIPTION*/
+
+.prod-body {
+    position: absolute;
+    height: 4em;
+    bottom: 0;
+    left: -1px;
+    right: -1px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: inset 4px -58px 21px 0px rgba(0, 0, 0, 0.7);
+}
+
+.prod-body .seen {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 1.8em;
+}
+
+.prod-body .eye {
+    display: inline-block;
+    position: relative;
+    padding-top: 25px;
+    right: 3.4em;
+}
+
+.prod-body .clock {
+    display: inline-block;
+    position: relative;
+    padding-top: 25px;
+}
+
+.prod-body .hour {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 5.3em;
+}
+
+.prod-body .heart {
+    display: inline-block;
+    position: relative;
+    padding-top: 35px;
+    left: 3.2em;
+}
+
+.prod-body .liked {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 2em;
+}
+
+.movies-pic p.movie-names {
+    position: relative;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 0.7em;
+}
+
+.movies-pic span.movie-year {
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    color: #848484;
+    padding-bottom: 2em;
+}
+
+.movie-names:hover, .heart:hover, .clock:hover, .eye:hover {
+    color: rgba(133, 35, 49, 0.47);
+    cursor: pointer;
+}
+
+/*BUTTON*/
+
+#more-movies button {
+    display: block;
+    border: 1px solid whitesmoke;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-size: 1em;
+    padding: 1.5em 4em 1.5em 4em;
+    background-color: rgba(110, 113, 133, 0.47);
+    text-align: center;
+    margin: 2em auto 4em auto;
+
+}
+
+#more-movies button:hover {
+    background-color: rgba(133, 35, 49, 0.47);
+    border-color: rgba(133, 35, 49, 0.47);
+}
+
+/*TESTIOMNIALS*/
+
+#testimonials {
+    box-shadow: inset 4px 6000px 21px 0px rgba(255, 41, 58, 0.8);
+    color: whitesmoke;
+}
+
+#testimonials h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+#testimonials .mySlides {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonials .mySlides #sides img {
+    width: 23%;
+    border-radius: 50%
+}
+
+#testimonials .mySlides #sides {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#testimonials .mySlides #sides a {
+    color: whitesmoke;
+    font-size: 2.5em;
+    margin: auto;
+}
+
+#testimonials .mySlides .text {
+    text-align: center;
+    margin: 1em 2em 1em 2em;
+}
+
+#testimonials .mySlides .text .name {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
+
+#testimonials .mySlides .text label {
+    display: block;
+    opacity: 0.5;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1.5em;
+}
+
+#testimonials .mySlides .text p {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0 5em 2em 5em;
+}

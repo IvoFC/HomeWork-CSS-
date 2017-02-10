@@ -1,0 +1,105 @@
+#wrapper {
+    font-family: 'Arial, Helevetica', sans-serif;
+}
+
+header {
+    height: 120px;
+    background-color: #9B6600;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+}
+
+header h2 {
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0 0 15px 25px;
+}
+
+#main {
+    display: flex;
+    align-self: flex-end;
+}
+
+article {
+    display: block;
+}
+
+article.left {
+    flex-grow: 1;
+    background-color: #58201F;
+}
+
+nav {
+    flex-grow: 1;
+    margin-right: 1em;
+    background-color: #64332F;
+    color: white;
+}
+
+nav h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: white;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 20px 0 20px 30px;
+}
+
+nav ul li {
+    padding-bottom: 20px;
+}
+
+nav ul li:hover {
+    opacity: 0.4;
+}
+
+nav ul li a:active {
+    color: khaki;
+}
+
+article.content {
+    flex-grow: 2;
+    background-color: #FFFFCD;
+}
+
+.content h1, .right h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.content p {
+    padding: 20px 40px 20px 40px;
+}
+
+article.right {
+    flex-grow: 1;
+    background-color: #87874B;
+}
+
+.right h1 {
+    text-align: right;
+    background-color: #999766;
+}
+
+footer {
+    background-color: gray;
+    height: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
