@@ -107,16 +107,16 @@ function StudentGroup(groupSubject) {
     };
 
     this.theBestStudentName = function () {
-        this.bestGrade = 0;
-        this.bestStudent = [];
+        var bestGrade = 0;
+        var bestStudentName = '';
 
         for (var index = 0; index < this.students.length; index++) {
-            if (this.students[index].grade >= this.bestGrade) {
-                this.bestGrade = this.students[index].grade;
-                this.bestStudent.push(this.students[index]);
+            if (this.students[index].grade >= bestGrade) {
+                bestGrade = this.students[index].grade;
+                bestStudentName = this.students[index].name;
             }
         }
-        return this.bestStudent;
+        return bestStudentName;
     };
 
     this.printStudentsInGroup = function () {
@@ -157,3 +157,5 @@ groupJS1.printStudentsInGroup();
 
 student6.receiveScholarship(5.50, 100);
 student6.receiveScholarship(3, 100);
+
+console.log(groupJS1.theBestStudentName());
