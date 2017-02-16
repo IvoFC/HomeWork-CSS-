@@ -111,7 +111,7 @@ function StudentGroup(groupSubject) {
         var bestStudentName = '';
 
         for (var index = 0; index < this.students.length; index++) {
-            if (this.students[index].grade >= bestGrade) {
+            if (this.students[index] != undefined && this.students[index].grade >= bestGrade) {
                 bestGrade = this.students[index].grade;
                 bestStudentName = this.students[index].name;
             }
@@ -130,8 +130,8 @@ var student1 = new Student("Atanas", 'JS', 6, 3, 22, false, 100);
 var student2 = new Student("Ivan", 'JS', 4, 2, 20, false, 200);
 var student3 = new Student("Georgi", 'JS', 5, 4, 23, true, 70);
 var student4 = new Student("Mira", 'JS', 3, 3, 22, false, 100);
-var student5 = new Student("Nikol", 'JS', 6, 1, 19, false, 300);
-var student6 = new Student("Petur", 'PHP', 3, 4, 22, true, 70);
+var student5 = new Student("Nikol", 'JS', 4, 1, 19, false, 300);
+var student6 = new Student("Petur", 'PHP', 6, 4, 22, true, 70);
 
 var groupJS1 = new StudentGroup('JS');
 
